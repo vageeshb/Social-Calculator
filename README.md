@@ -8,8 +8,7 @@ Technologies Used
 
 1. Node.js
 2. Sockets.io
-3 Work flow management
-
+3. Work flow management
   1. Grunt
   2. Bower
 
