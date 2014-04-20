@@ -1,0 +1,29 @@
+extends layout
+
+block content
+  .row
+    .col-md-6.calculator
+      input(type="text", id="myScreen", disabled="disabled", data-toggle="popover" data-placement="right" data-content="Calculation expression is missing!").text-center.form-control
+      br
+      .well
+        table.table.table-bordered.text-center
+          tr
+            each val in [7,8,9,'+']
+              td(value=val, id='button_'+val).mybutton= val
+          tr
+            each val in [4,5,6,'-']
+              td(value=val, id='button_'+val).mybutton= val
+          tr
+            each val in [1,2,3,'*']
+              td(value=val, id='button_'+val).mybutton= val
+          tr
+            each val in ['.',0,'C','/']
+              td(value=val, id='button_'+val).mybutton= val
+
+      button#calculate(type="button", title="You can also press enter key!").btn.btn-primary.form-control Calculate
+    .col-md-6.well
+      div.text-center
+        h3 
+          span.fa.fa-flask 
+          | History
+      ul.list-group#connectedUsers

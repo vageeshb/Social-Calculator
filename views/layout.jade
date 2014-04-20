@@ -1,0 +1,44 @@
+doctype html
+html
+  head
+    title Social Calc | VageeshB
+    script(src='/socket.io/socket.io.js')
+    link(rel='stylesheet', href='css/style.css')
+    link(rel='stylesheet', href='bower_components/fontawesome/css/font-awesome.css')
+    //
+      bower:css
+    link(rel='stylesheet', href='bower_components/bootstrap/dist/css/bootstrap.css')
+    //
+      endbower 
+  body(onkeyup="buttonPressed(event)")
+    nav(role="navigation").navbar.navbar-inverse.navbar-fixed-top
+      .navbar-header
+        button(type="button", data-toggle="collapse", data-target=".navbar-ex1-collapse").navbar-toggle
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a(href="#" ).navbar-brand SC++
+      .collapse.navbar-collapse.navbar-ex1-collapse
+        ul.nav.navbar-nav 
+        ul.nav.navbar-nav.navbar-right
+          li
+            a(href="#") Welcome: 
+              span#user
+    .container
+      block content
+    br
+    #footer
+      .container.text-center
+        p.text-muted.credit
+          | Social Calculator created by 
+          a(href='http://atrsyvb.herokuapp.com/') Vageesh Bhasin
+          | .
+    //
+     bower:js
+    script(src='bower_components/jquery/dist/jquery.js')
+    script(src='bower_components/bootstrap/dist/js/bootstrap.js')
+    script(src='bower_components/momentjs/moment.js')
+    //
+     endbower 
+    script(src='/js/app.min.js')

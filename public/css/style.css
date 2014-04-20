@@ -1,0 +1,32 @@
+.mybutton {
+  cursor: pointer;
+  font-weight: 700;
+  background-color: #DEE6FF;
+}
+.mybutton:hover {
+  background-color: #C7C7C7;
+}
+#connectedUsers {
+  max-height: 380px;
+  overflow-y:auto;
+}
+.badge:hover {
+  cursor: pointer;
+}
+.calculator {
+  background-color: white;
+  border: 1px solid #CBCBCB;
+  border-radius: 5px;
+  padding: 10px;
+}
+body {
+  padding-top: 60px;
+  background-image:url('/bg.png');
+}
+#footer {
+  background-color: #222222;
+  position: fixed;
+  width: 100%;
+  padding: 10px;
+  bottom: 0;
+}
