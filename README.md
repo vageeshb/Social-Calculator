@@ -3,6 +3,8 @@ Social Calculator
 
 Project developed as part of 'Hacker Earth - Passport Parking' Challenge
 
+Can be accessed at [LINK](http://socialcal.herokuapp.com/)
+
 Technologies Used
 =================
 
